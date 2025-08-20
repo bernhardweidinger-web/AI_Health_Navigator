@@ -29,7 +29,7 @@ The main users are patients, but doctors and healthcare organizations also benef
 ## Data sources and AI methods
 
 Data sources:  
-* Public medical symptom datasets (e.g., [SymCAT](https://www.symcat.com/), open health APIs)  
+* Public medical symptom datasets (e.g. open health APIs)  
 * Research literature and anonymized healthcare records (where legally possible)  
 
 AI methods:  
