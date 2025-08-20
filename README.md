@@ -1,54 +1,64 @@
-# AI_Health_Navigator
-AI Health Navigator – an AI-powered symptom checker and triage assistant to relieve doctors, reduce waiting times, and make healthcare more efficient.
-Final project for the Building AI course  
+# AI Health Navigator
 
-## Summary  
-An AI-powered "Health Navigator" that assists patients with symptom assessment, triage, and pre-selection before a medical consultation.  
-The goal is to reduce the workload of doctors, shorten waiting times, and use healthcare resources more efficiently.  
-*(Building AI course project)*  
+Final project for the Building AI course
 
-## Background  
-The shortage of doctors is a growing global issue, leading to long waiting times, overburdened hospitals, and declining quality of care. Routine cases and minor illnesses often consume valuable time that should be reserved for urgent or complex conditions.  
+## Summary
 
-My motivation: As a patient, relative, and mental coach, I see how urgently we need smart support systems to relieve both doctors and patients.  
+AI Health Navigator is an AI-powered symptom checker and triage assistant. It helps patients describe symptoms, suggests possible conditions, and provides guidance on whether medical attention is needed. Goal: relieve doctors, reduce waiting times, and improve healthcare efficiency.
 
-**Problems this idea addresses:**  
-- Long waiting times for appointments and diagnoses  
-- Overcrowded emergency rooms  
-- Inefficient use of doctors’ working hours  
-- Lack of reliable tools for patients to assess their symptoms  
+## Background
 
-## Data sources and AI methods  
-- **Data sources**: anonymized patient records, symptom databases (WHO, PubMed), medical guidelines  
-- **AI methods**:  
-  - Natural Language Processing (NLP) for processing patient symptom descriptions  
-  - Machine Learning classifiers to map symptoms to risk categories  
-  - Decision-Support System for triage recommendations (e.g., “self-care,” “family doctor,” “emergency”)  
+The healthcare system is under pressure due to:
+* Shortage of doctors in many countries  
+* Long waiting times for patients  
+* Growing demand for quick and reliable health information  
 
-## How is it used?  
-1. Patients use a mobile app or web platform to input their symptoms.  
-2. The AI asks clarifying follow-up questions to refine the input.  
-3. The system provides a recommendation: urgency level and suggested next step.  
-4. Doctors receive structured, pre-qualified patient data, making consultations more efficient.  
+My personal motivation is to contribute to healthcare accessibility. Many people delay seeking care or overwhelm emergency rooms with non-urgent issues. An AI assistant can serve as a first step to triage and guide people efficiently. This project matters because it can reduce pressure on healthcare systems, especially in times of crisis.
 
-**Users:**  
-- **Patients**: quick guidance and less uncertainty  
-- **Doctors**: relieved by structured pre-information  
-- **Healthcare systems**: better allocation of limited resources  
+## How is it used?
 
-## Challenges  
-- AI cannot provide a final medical diagnosis – medical responsibility must remain with professionals.  
-- Data privacy and security are critical.  
-- Risk of underestimating or overestimating symptoms.  
-- Acceptance by doctors and patients requires trust and transparency.  
+* Patients interact with the AI via a mobile app or web platform.  
+* They input their symptoms in plain language.  
+* The AI system uses NLP (Natural Language Processing) to analyze input.  
+* It returns likely conditions, advice (self-care, see a GP, emergency), and next steps.  
 
-## What next?  
-- Integrate with telemedicine services.  
-- Extend to chronic disease monitoring and follow-up care.  
-- Collaborate with health insurers and clinics.  
-- Long-term vision: create a standardized European triage system to mitigate the doctor shortage.  
+The main users are patients, but doctors and healthcare organizations also benefit through reduced workload and improved patient flow.
 
-## Acknowledgments  
-- Inspired by telemedicine platforms (e.g., Ada Health, Babylon Health).  
-- Built on open-source frameworks for NLP and machine learning.  
-- Developed as part of the **Building AI course project**.  
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Hospital_icon.svg" width="150">
+
+## Data sources and AI methods
+
+Data sources:  
+* Public medical symptom datasets (e.g., [SymCAT](https://www.symcat.com/), open health APIs)  
+* Research literature and anonymized healthcare records (where legally possible)  
+
+AI methods:  
+* Natural Language Processing (for symptom input)  
+* Classification models (predict likely conditions)  
+* Decision trees / neural networks (triage recommendations)  
+
+| Technique   | Use case |
+| ----------- | -------- |
+| NLP         | Understanding patient symptoms |
+| Machine Learning | Predicting possible conditions |
+| Rule-based + AI hybrid | Giving safe triage recommendations |
+
+## Challenges
+
+* Accuracy and safety: AI should **support**, not replace doctors.  
+* Data quality: Biased or incomplete data leads to unreliable advice.  
+* Ethical issues: Privacy of sensitive health data must be protected.  
+* Not suitable for all conditions: Emergency cases still need direct medical attention.  
+
+## What next?
+
+* Build a prototype with a small medical dataset.  
+* Collaborate with healthcare professionals to validate results.  
+* Scale into a multilingual system to reach more communities.  
+* Potential integration with telemedicine services.  
+
+## Acknowledgments
+
+* Inspired by global healthcare challenges and the need to relieve overburdened doctors.  
+* Open datasets such as and academic research in digital health.  
+* Thanks to Reaktor and University of Helsinki for the Building AI course and template.  
